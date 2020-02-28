@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab_3_Task_3_Tran Thi Thuy Hang</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style type="text/css">
+    	ul a{
+    		color: blue;
+    		background-color: white;
+    	}
+    	ul a:hover{
+    		color: white;
+    		background-color: red;
+    	}
+    	#btnSignIn{
+    		border: 2;
+    		border-radius: 50px;
+    	}
+    	form{
+    		border: 2px solid grey;
+    		border-radius: 10px; 
+    		width: 80%;
+    	}
+    </style>
+</head>
+<body>
+	<form method="get" action="" >
+		<div>
+			<p><b>LinkedIn</b></p>
+		</div>
+		<div>
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">What is LinkedIn</a></li>
+				<li><a href="">Join Today</a></li>
+				<li><a href="">Sign In</a></li>
+				<li type="none">
+					<ul type="circle">
+						<li>
+							<label for="email">Email:<input type="Email" name="EmailAddr" id="email" required="true"></label>
+						</li>
+						<li>
+							<label for="password">Password: <input type="Password" name="Passwd" id="password" required="true"></label>
+						</li>
+						<li>
+							<button type="signin" class="btnSignIn">Sign In</button>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<hr>
+		<h1>Over 175 million professionals use LinkedIn to exchange information, ideas and oppotunities </h1>
+		<div>
+			<ul>
+				<li>Stay formed about your contacts and industry</li>
+				<li>Find the people & acknowlegement you need to achieve your goals </li>
+				<li>Control your professional identity online</li>
+			</ul>
+		</div>
+		<h2>Join LinkedIn Today</h2>
+		<fieldset>
+			<legend>Sign Up</legend>
+			<ul>
+				<li>
+					<label for="firstname">First Name: <input type="FirstName" name="1stname" id="firstname" required="true"></label>
+				</li>
+				<li>
+					<label for="lastname">Last Name: <input type="LastName" name="lstname" id="lastname" required="true"></label>
+				</li>
+				<li>
+					<label for="email">Email: <input type="Email" name="EmailAddr" id="email" required="true"></label>
+				</li>
+				<li>
+					<label for="password">Password: <input type="Password" name="Passwd" id="password" required="true"></label>
+				</li>
+			</ul>
+			<p><i>6 or more characters</i></p>
+		</fieldset>
+		<div>
+			<button type="signup" class="btnSignUp">Join Now</button>
+		</div>	
+		<div>
+			<p>Already on LinkedIn? <a href="">Sign In</a></p>
+		</div>	
+	</form>
+</body>
+</html>
