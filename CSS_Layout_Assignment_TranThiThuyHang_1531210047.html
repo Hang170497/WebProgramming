@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Layout Assignment</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div{
+			margin: 10px 0px;
+			box-sizing: border-box;
+		}
+		.layout_assignment{
+			border: 5px solid white;
+		}
+		#header_title{
+			width: 100%;
+			border: 1px solid grey; 
+			background-color: grey;
+			padding-top: 40px;
+			padding-bottom: 40px;
+			padding-left: 20px;
+			font-size: 40px; 
+			color: white;	
+		}
+		#danh_muc1{
+			border: 1px;
+			width: 300px;
+			background-color: #6495ED;
+			font-size: 20px;
+			display: block;
+			margin-bottom: 10px;
+		}
+		.danh_muc{
+			float: left;
+			width: 30%
+			margin:none;
+		}
+		.content{
+			float: right;
+			width: 70%;
+			margin: none;
+		}
+		#footer_text{
+			width: 100%;
+			border: 1px solid grey; 
+			background-color: grey;
+			padding-top: 40px;
+			padding-bottom: 40px;
+			padding-left: 20px;
+			font-size: 20px; 
+			color: white;
+		}
+		#main_body:after{
+			clear:both;
+			display:block; 
+			content: "";
+		}
+	</style>
+</head>
+<body>
+	<header id="header_title">
+		Công ty ABC
+	</header>	
+	<main id="main_body">		
+		<div class="danh_muc">
+			<ul type="none" >
+				<li id="danh_muc1">Danh mục 1</li>
+				<li id="danh_muc1">Danh mục 2</li>
+				<li id="danh_muc1">Danh mục 3</li>
+				<li id="danh_muc1">Danh mục 4</li>
+			</ul>
+		</div>
+		<div class="content">
+			<h1>Tiêu đề</h1>
+			<p>Theo ông Phu, Việt Nam đã làm "sớm và quyết liệt". Ngay từ giai đoạn đầu của dịch, Việt Nam đã triển khai biện pháp mạnh mẽ là tập trung giám sát người nhập cảnh, đầu tiên là từ Trung Quôc, Hàn Quốc, sau đó là đến Châu Âu, Mỹ. Khi số người nhập cảnh giảm thì số ca nhiễm trong nhóm này cũng giảm.</p>
+			<p>
+				Ở giai đoạn này, ông Phu đánh giá Việt Nam đã kiểm soát và xét nghiệm người nhập cảnh nhiều, nhưng xét nghiệm sàng lọc trong cộng đồng chưa nhiều. "Cần đẩy mạnh xét nghiệm trong cộng đồng, vì có xét nghiệm mới phát hiện nhiều, từ đó có cơ sở đánh giá được tình hình", ông Phu nói.
+			</p>
+		</div>			
+	</main>	
+	<footer id="footer_text">
+		Footer Text
+	</footer>
+</body>
+</html>
