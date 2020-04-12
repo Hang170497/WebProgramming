@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Bootstrap Assignment</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		div{
+			box-sizing: border-box;
+		}
+		.container:after {
+			clear: both;
+			content: "";
+			display: block;
+		}
+		#header_title{
+			width: 100%;
+			border: 1px solid grey; 
+			background-color: grey;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-left: 20px;
+			font-size: 20px; 
+			color: white;	
+		}
+		#danh_muc1{
+			border: 1px;
+			background-color: #6495ED;
+			font-size: 15px;
+			display: block;
+			margin-bottom: 10px;
+			padding: 5px 5px 5px;
+			color: white;
+		}
+		.content{
+			border: 1px solid grey;
+			padding: 15px;
+			margin-top: 0px;
+		}
+		#footer_text{
+			width: 100%;
+			border: 1px solid grey; 
+			background-color: grey;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-left: 20px;
+			font-size: 20px; 
+			color: white;
+		}
+		#main_body{
+			margin-top: 20px;
+		}
+		#main_body:after{
+			clear:both;
+			display:block; 
+			content: "";
+		}
+		.tin_lien_quan{
+			margin-top: 20px;
+		}
+		#pic_part{
+			border-radius: 12px;
+		}
+		.film_part{
+			border: 1px solid grey;
+			border-radius: 12px;
+			box-shadow: 5px 5px 5px 5px #C0C0C0;
+			padding: 10px;
+			margin-bottom: 10px;
+		}
+		#avatar_pic{
+			border-radius: 50%
+		}
+		#mike{
+			color: aqua;
+		}
+		#giam_gia{
+			position: absolute;
+			background-color: red;
+			top: 5px;
+			right: 5px;
+			color: white;
+		}
+		.hinh_anh{
+			position: relative;
+		}
+		#gia_cu{
+			color: grey;
+			text-decoration: line-through;
+		}
+		.wrapped_box{
+			border-radius: 12px;
+			padding: auto;
+			box-shadow: rgba(0, 0, 0, 0.1) 0 0 20px;
+		}
+		ul{
+			list-style-type: none;
+			padding-left: 0px;
+		}
+		.tieu_de_nho{
+			border-bottom: 2px solid orange;
+			display: inline-block;
+		}
+		.electric_part{
+			margin-top: 20px;
+		}
+		#noi_com_dien{
+			display: block;
+			margin-left: auto;
+			margin-right: auto
+		}
+	</style>
+</head>
+<body>
+	<header id="header_title">
+		Công ty ABC
+	</header>	
+	<main id="main_body">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-3 col-12 item">
+					<ul>
+						<li id="danh_muc1">The Flight</li>
+						<li id="danh_muc1">The City</li>
+						<li id="danh_muc1">The Island</li>
+						<li id="danh_muc1">The Food</li>
+					</ul>
+				</div>
+				<div class="col-xl-9 col-12 item">
+					<div class="content">
+						<h1>The City</h1>
+						<p>Chania is the capital of the Cania region on the island of Crete. The city can be divided into two parts, the old town and the mordern city. you will learn more about web layout and responsive web pages in a later chapter</p>
+					</div>
+				</div>
+			</div>				
+		</div>			
+		<div class="tin_lien_quan">
+			<div class="container-fluid">
+				<p class="tieu_de_nho"><b>TIN LIÊN QUAN</b></p>
+				<div class="row">
+					<div class="col-xl-6 col-12 item">
+						<div class="film_part">
+							<div class="row">
+								<div class="col-4" >
+									<img src="https://photo-3-baomoi.zadn.vn/w1000_r1/2019_05_15_329_30715694/0c8f53219961703f2970.jpg" width="100%" id="pic_part">
+								</div>
+								<div class="col-8" id="content_part">
+									<p><b>Chia sẻ phim trên Netflix và HBO để xem trong mùa dịch (phần 2)</b></p>
+									<p>Mình tiếp tục tổng hợp một số phim trên Netflix và HBO để cùng xem trong mùa dịch rảnh rỗi ở nhà. Mình chọn Netflix và HBO vì 2 dịch vụ giải trí này rất phổ biến ở Việt Nam...</p>
+									<img src="https://www.omghowcheap.co.uk/ekmps/shops/omghowcheap/images/birthday-card-blank-puppy-design-large-square-size-6.25-x-6.25-hi0066-5480-p.jpg" width="7%" id="avatar_pic" alt=" "> <span id="mike"><b>Mikeknowsme</b></span> 3 giờ trước
+								</div>
+							</div>		
+						</div>					
+					</div>
+					<div class="col-xl-6 col-12 item">
+						<div class="film_part">
+							<div class="row">
+								<div class="col-4">
+									<img src="https://photo-3-baomoi.zadn.vn/w1000_r1/2019_05_15_329_30715694/0c8f53219961703f2970.jpg" width="100%" id="pic_part">
+								</div>
+								<div class="col-8" id="content_part">
+									<p><b>Chia sẻ phim trên Netflix và HBO để xem trong mùa dịch (phần 2)</b></p>
+									<p>Mình tiếp tục tổng hợp một số phim trên Netflix và HBO để cùng xem trong mùa dịch rảnh rỗi ở nhà. Mình chọn Netflix và HBO vì 2 dịch vụ giải trí này rất phổ biến ở Việt Nam...</p>
+									<img src="https://www.omghowcheap.co.uk/ekmps/shops/omghowcheap/images/birthday-card-blank-puppy-design-large-square-size-6.25-x-6.25-hi0066-5480-p.jpg" width="7%" id="avatar_pic" alt=" "> <span id="mike"><b>Mikeknowsme</b></span> 3 giờ trước
+								</div>
+							</div>		
+						</div>					
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="electric_part">
+			<div class="container-fluid">
+				<p class="tieu_de_nho"><b>CÓ THỂ BẠN THÍCH</b></p>
+				<div class="row">
+					<div class="col-xl-3 col-12 item">
+						<div class="wrapped_box">
+							<div class="hinh_anh">
+								<img src="https://www.toshiba.com.vn/Data/Sites/1/media/Giadung/sha-noi-com-dien.png" width="50%" alt="noi_com_dien" id="noi_com_dien" >
+								<p id="giam_gia">-50%</p>
+							</div>
+							<div class="thong_tin">
+								<p><b>Nồi cơm điện vừa bán vừa cho</b></p>
+								<p><span><b>2.000.000 đ</b></span> <span id="gia_cu" ">5.000.000 đ</span></p>
+							</div>
+						</div>				
+					</div>
+					<div class="col-xl-3 col-12 item">
+						<div class="wrapped_box">
+							<div class="hinh_anh">
+								<img src="https://www.toshiba.com.vn/Data/Sites/1/media/Giadung/sha-noi-com-dien.png" width="50%" alt="noi_com_dien" id="noi_com_dien">
+								<p id="giam_gia">-50%</p>
+							</div>
+							<div class="thong_tin">
+								<p><b>Nồi cơm điện vừa bán vừa cho</b></p>
+								<p><span><b>2.000.000 đ</b></span> <span id="gia_cu" ">5.000.000 đ</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-12 item">
+						<div class="wrapped_box">
+							<div class="hinh_anh">
+								<img src="https://www.toshiba.com.vn/Data/Sites/1/media/Giadung/sha-noi-com-dien.png" width="50%" alt="noi_com_dien" style="display: block; margin-left: auto;margin-right: auto">
+								<p id="giam_gia">-50%</p>
+							</div>
+							<div class="thong_tin">
+								<p><b>Nồi cơm điện vừa bán vừa cho</b></p>
+								<p><span><b>2.000.000 đ</b></span> <span id="gia_cu" ">5.000.000 đ</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-12 item">
+						<div class="wrapped_box">
+							<div class="hinh_anh">
+								<img src="https://www.toshiba.com.vn/Data/Sites/1/media/Giadung/sha-noi-com-dien.png" width="50%" alt="noi_com_dien" style="display: block; margin-left: auto;margin-right: auto">
+								<p id="giam_gia">-50%</p>
+							</div>
+							<div class="thong_tin">
+								<p><b>Nồi cơm điện vừa bán vừa cho</b></p>
+								<p><span><b>2.000.000 đ</b></span> <span id="gia_cu" ">5.000.000 đ</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>			
+	</main>	
+	<footer id="footer_text">
+		Footer Text
+	</footer>
+</body>
+</html>
