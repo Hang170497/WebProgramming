@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript-Fundamental-Inclass-13.04.2020</title>
+	<meta charset="utf-8">
+	<script src="./sample.js" type="text/javascript"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		let valueDouble = 8.75;
+		let valueInt = valueDouble|0;
+		doubletoint(valueDouble);
+		document.write('Int value is: ' + valueInt + "<br/>");
+		
+
+		let roundedInt = (valueDouble + 0.5)|0;
+		doubletoroundedint(valueDouble);
+		document.write('RoundedInt number is: '+ roundedInt + "<br/>");
+		
+		let str = '1234';
+		let i = str|0 + 1;
+		strChange(str);
+		document.write('NewString is: '+i);
+	</script>	
+</body>
+</html>
