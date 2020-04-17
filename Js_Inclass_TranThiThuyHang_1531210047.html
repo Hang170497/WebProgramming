@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript-Fundamental-Inclass-13.04.2020</title>
+	<meta charset="utf-8">
+	<script src="./sample.js" type="text/javascript"></script>
+
+</head>
+<body>
+	<p>Pop-up Example</p>
+	<button onclick="sample()">Call Js function from sample.js</button>
+	<p id="clock">Clock</p>
+	<script type="text/javascript">
+		function timerFunc(){
+			var now = new Date();
+			var hour = now.getHours();
+			var min = now.getMinutes();
+			var sec = now.getSeconds();
+			document.getElementById("clock").innerHTML = ""+hour+":"+min+":"+sec;
+		}
+		setInterval(timerFunc,1000);
+	</script>
+	<p id="timeField">Current Date</p>
+	<script type="text/javascript">
+		var now = new Date();
+		var result = "It is now" + now;
+		document.getElementById("timeField").innerText = result;
+	</script>
+	<p>Math - Random Number</p>
+	<script type="text/javascript">
+		for (i = 1; i <= 20; i++) {
+			var x = Math.random();
+			x = 10*x+1;
+			x = Math.floor(x);
+			document.write("Random number ("+i+") in range"+"1..10 -->"+x+"<br/>");
+		}
+	</script>
+	
+</body>
+</html>
