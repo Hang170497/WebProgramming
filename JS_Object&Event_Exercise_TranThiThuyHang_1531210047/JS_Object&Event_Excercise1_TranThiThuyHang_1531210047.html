@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS_Object and Event_Exercise1</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		function product (ID,Name,Image,Price,discountedPrice){
+			return {
+				ID : ID,
+				Name : Name,
+				Image : Image,
+				Price : Price,
+				discountedPrice : discountedPrice,
+				toString : function(){
+					console.log(this.Name);
+				}
+			};
+		}
+		let sach1 = product("001","ABC","1","100.000","10%");
+		let sach2 = product("002","BCD","2","110.000","11%");
+		let sach3 = product("003","CDE","3","120.000","12%");
+		
+		sach1.toString();
+		sach2.toString();
+		sach3.toString();
+
+	</script>
+</body>
+</html>
