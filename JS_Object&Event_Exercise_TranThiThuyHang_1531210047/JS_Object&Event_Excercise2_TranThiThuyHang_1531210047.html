@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS_Object and Event_Exercise2</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		var product = [
+			{
+		        ID: "1",
+		        Name: "Sach 1",
+		        Image: "1",
+		        Price: "100.000",
+		        discountedPrice: "10%"
+		    },
+		    {
+		        ID: "2",
+		        Name: "Sach 2",
+		        Image: "2",
+		        Price: "150.000",
+		        discountedPrice: "15%"
+		    },
+		    {
+		        ID: "3",
+		        Name: "Sach 3",
+		        Image: "3",
+		        Price: "200.000",
+		        discountedPrice: "20%"
+		    }
+		]
+		function removebyID(product,ID) {
+			for (let i = 1; i < product.length; i++) {
+		        if (product[i].ID == ID) {
+		            product.splice(i, 1);
+		        }
+		    }
+		}
+
+		removebyID(product,"2");
+		console.log(product);
+
+	</script>
+</body>
+</html>
