@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 4 - Problem 7 - Tran Thi Thuy Hang - 1531210047</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+	    div{
+	    	box-sizing: border-box;
+	    }
+    	.parent #normal{
+    		display: inline;
+    		margin: 0;
+    		padding: 0;
+    	}
+    	.parent #dropdown{
+    		display: inline;
+    		margin: 0;
+    		padding: 0;
+    	}
+    	.parent{
+    		list-style-type: none;
+    		margin: 0;
+    		padding: 0;
+    		background-color: #006699;
+    		overflow: hidden;
+
+    	}
+    	.parent a{
+    		text-align: center;
+    		padding-left: 10px;
+    		padding-right: 10px;
+    		padding-bottom: 10px;
+    		padding-top: 10px;
+
+    		color: white;
+    		border-right: 1px solid white;
+    		display: inline-block;
+    		text-decoration: none;
+    	}
+    	.children{
+    		display: none;
+    		position: absolute;
+    		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			z-index: 1;
+			background-color: #006699;
+			border-bottom: 1px solid white;
+			list-style-type: none;
+    	}
+    	.parent a:hover{
+    		background-color: orange;
+    	}
+    	#dropdown:hover .children {
+    		display: block;		
+    	}
+    	#dropdown:hover .children a{
+    		border-right: none;
+    		border-bottom: 1px solid white;
+    		display: block;
+    		text-align: left;
+    	}
+    	.container-fluid{
+    		background-color: #006699;
+    	}
+    	.nav_menu{
+    		padding-left: 150px;
+    	}
+    	button:hover{
+    		background-color: orange;
+    	}
+    	button{
+    		border: none;
+    		background-color:#006699;
+    		color: white;
+    	}
+    	#dropdown{
+    		overflow: hidden;
+    	}
+    </style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="nav_menu">
+				<ul class="parent">
+					<li id="normal"><a href="" style="border-left: 1px solid white">Trang chủ</a></li>
+					<li id="dropdown"><a href="" ><button>Khoa CNTT <i class="fa fa-caret-down"></i></button></a>
+						<ul class="children">
+							<li><a href="">Giới thiệu</a></li>
+							<li><a href="">Ngỏ lời từ Trưởng Khoa</a></li>
+							<li><a href="">Giảng viên</a></li>
+							<li><a href="">Hình ảnh CIT</a></li>
+						</ul>			
+					</li>
+					<li id="dropdown"><a href="" ><button>Chương trình đào tạo <i class="fa fa-caret-down"></i></button></a>
+						<ul class="children">
+							<li><a href="">Ngành Kĩ thuật phần mềm</a></li>
+							<li><a href="">Ngành Mạng máy tính va Truyền thông dữ liệu</a></li>
+							<li><a href="">Ngành Khoa học máy tính</a></li>
+						</ul>			
+					</li>
+					<li id="normal"><a href="">Tin tức</a></li>
+					<li id="normal"><a href="">Sự kiện</a></li>
+					<li id="normal"><a href="">Nghiên cứu khoa học</a></li>
+					<li id="normal"><a href="">Giáo vụ</a></li>
+					<li id="dropdown"><a href="" ><button>Giáo vụ <i class="fa fa-caret-down"></i></button></a>
+						<ul class="children">
+							<li><a href="">Biểu mẫu</a></li>
+							<li><a href="">Thông báo học vụ</a></li>
+						</ul>			
+					</li>
+					<li id="normal"><a href="">Liên hệ</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
